@@ -1,13 +1,19 @@
-function handel_button(event){
-    let waarde = event.target.innerHTML;
-    waarde++;
-    console.log(waarde);
-    event.target.innerHTML = waarde.toString();
-}
+const buttons = document.querySelectorAll('.button');
+let activeButton = null;
 
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    if (button === activeButton) {
+      return;
+    }
 
+    if (activeButton) {
+      activeButton.textContent = '0';
+      activeButton.classList.remove('red', 'disabled');
+    }
 
-
-first.onclick = handel_button
-second.onclick = handel_button
-third.onclick = handel_button
+    button.textContent = '1';
+    button.classList.add('red', 'disabled');
+    activeButton = button;
+  });
+});
