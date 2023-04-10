@@ -1,0 +1,10 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#image {
+	height: 80px;
+	width: 80px;
+	background: url('tank.png') 84px 0px;
+}
