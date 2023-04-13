@@ -7,4 +7,7 @@
 	height: 80px;
 	width: 80px;
 	background: url('tank.png') 84px 0px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
 }
