@@ -2,16 +2,16 @@ var image = document.getElementById("image");
 let banden = 0
 const tankMovements = [84, 168, 252, 336, 420, 504, 588, 672];
 let posleft = 0;
-let postop = 0
+let postop = 0;
 document.onkeydown = checkKey;
 
 function moveLeft() {
-    posleft -= 5;
+    posleft -= 10;
     document.getElementById("image").style.left = posleft + `px`;
     console.log(document.getElementById("image").style.left)
 }
 function moveRight(){
-    posleft += 5;
+    posleft += 10;
     document.getElementById("image").style.left = posleft + `px`;
     console.log(document.getElementById("image").style.left)
 }
@@ -57,7 +57,6 @@ function checkKey(e) {
         if (banden >= 7){
             banden = 0
         }
-
     } else if (e.keyCode == 39) {   // right arrow
     	console.log("right arrow");
         image.style.transform = "rotate(90deg)";
