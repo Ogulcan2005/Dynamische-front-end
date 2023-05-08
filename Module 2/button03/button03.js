@@ -1,10 +1,10 @@
 const buttons = document.querySelectorAll("button");
-const clickCounts = Array.from(buttons, () => 0);
+const aantal_kliks = Array.from(buttons, () => 0);
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function () {
-        clickCounts[i]++;
-        switch (clickCounts[i]) {
+        aantal_kliks[i]++;
+        switch (aantal_kliks[i]) {
             case 1:
                 this.style.backgroundColor = "red";
                 break;
