@@ -1,0 +1,71 @@
+/* table {
+    border-collapse: collapse;
+  }
+
+  td {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+  } */
+img.red{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+img.green{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 560px;
+  left: 40px;
+}
+img.yellow{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 560px;
+  left: 560px;
+}
+img.blue{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 40px;
+  left: 560px;
+}
+div.schaakbord{
+  position: relative;
+  background-image: url("icarus.png");
+  height: 640px;
+  width: 640px;
+  background-size: 100% 100%;
+}
+img.gk{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 600px;
+  left: 0px;
+}
+div.dobbelsteen{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+button{
+  width: 100px;
+  height: 100px;
+}
+img.gk{
+  height: 40px;
+  width: 40px;
+}
+.active{
+  outline: 3px dotted greenyellow;
+}
